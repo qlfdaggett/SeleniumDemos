@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="methods" thread-count="3" >
+	<test name="testGuru" parallel="methods" thread-count="3">
+		<classes>
+			<class name="PomDemoTests.PomDemoTests">
+				<methods>
+					<!-- 
+					<include name="chromeVerifyLogin"/>
+					<include name="chromeVerifyFail"/>
+					<include name="chromeCapySearch"/>
+					<include name="chromeNapoleonSearch"/>
+					<include name="firefoxVerifyLogin"/>
+					<include name="firefoxVerifyFail"/>
+					<include name="firefoxCapySearch"/>
+					<include name="firefoxNapoleonSearch"/>
+					-->
+					<include name="safariVerifyLogin"/>
+					<include name="safariVerifyFail"/>
+					<include name="safariCapySearch"/>
+					<include name="safariNapoleonSearch"/> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

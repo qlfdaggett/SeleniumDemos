@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="testGuru(failed)">
+    <classes>
+      <class name="PomDemoTests.PomDemoTests">
+        <methods>
+          <include name="safariNapoleonSearch"/>
+          <include name="safariCapySearch"/>
+          <include name="safariVerifyFail"/>
+          <include name="safariVerifyLogin"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- PomDemoTests.PomDemoTests -->
+    </classes>
+  </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

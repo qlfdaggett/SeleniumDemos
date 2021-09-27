@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default suite" 
+	data-provider-thread-count="3" parallel="tests" thread-count="3"> 
+	
+	<test name="factory_test" parallel="instances"
+		thread-count="3">
+		<classes>
+			<class name="tests.FactoryTests"/>
+		</classes>
+	</test>	
+<!-- 
+	
+  <test name="DefaultTest" parallel="methods" thread-count="2"> 
+    <classes>
+      <class name="tests.parallelTests">
+      	<methods>
+      		<include name="addToCartTest"/>
+      		<include name="removeFromCartTest"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+   -->	
+</suite> <!-- Default suite -->

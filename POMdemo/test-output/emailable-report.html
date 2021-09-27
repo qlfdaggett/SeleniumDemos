@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TestSuite</th></tr>
+<tr><td><a href="#t0">testGuru</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">25,189</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">testGuru &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">PomDemoTests.PomDemoTests</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1632438771927</td><td rowspan="1">0</td></tr><tr><th colspan="4">testGuru &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">PomDemoTests.PomDemoTests</td><td><a href="#m1">safariCapySearch</a></td><td rowspan="1">1632438768851</td><td rowspan="1">2027</td></tr><tr class="failedeven"><td><a href="#m2">safariNapoleonSearch</a></td><td rowspan="1">1632438770881</td><td rowspan="1">1044</td></tr><tr class="failedeven"><td><a href="#m3">safariVerifyFail</a></td><td rowspan="1">1632438768851</td><td rowspan="1">2863</td></tr><tr class="failedeven"><td><a href="#m4">safariVerifyLogin</a></td><td rowspan="1">1632438768851</td><td rowspan="1">2875</td></tr></tbody>
+</table>
+<h2>testGuru</h2><h3 id="m0">PomDemoTests.PomDemoTests#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.chromeDriver&quot; is null
+	at PomDemoTests.PomDemoTests.closeBrowser(PomDemoTests.java:155)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">PomDemoTests.PomDemoTests#safariCapySearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at PomDemoTests.PomDemoTests.verifyWikiSearch(PomDemoTests.java:49)
+	at PomDemoTests.PomDemoTests.capySearch(PomDemoTests.java:53)
+	at PomDemoTests.PomDemoTests.safariCapySearch(PomDemoTests.java:132)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">PomDemoTests.PomDemoTests#safariNapoleonSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at PomDemoTests.PomDemoTests.verifyWikiSearch(PomDemoTests.java:49)
+	at PomDemoTests.PomDemoTests.napoleonSearch(PomDemoTests.java:57)
+	at PomDemoTests.PomDemoTests.safariNapoleonSearch(PomDemoTests.java:150)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">PomDemoTests.PomDemoTests#safariVerifyFail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: A node reference could not be resolved: Node with identifier &apos;node-8EE2A3D8-357C-4B20-B248-3DEF83F6EC04&apos; was not found
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;MBP-23.local&apos;, ip: &apos;2601:1c2:1a00:b50:1d4d:38:d723:6a44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [DD43244E-020E-4BE3-A214-3B8C58EF489C, sendKeysToElement {id=node-8EE2A3D8-357C-4B20-B248-3DEF83F6EC04, value=[Ljava.lang.CharSequence;@726d53a8}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.0, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20G165, safari:platformVersion: 11.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Element: [[SafariDriver: Safari on MAC (DD43244E-020E-4BE3-A214-3B8C58EF489C)] -&gt; name: wpName]
+Session ID: DD43244E-020E-4BE3-A214-3B8C58EF489C
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at PomDemo.LoginPage.logInFromSplash(LoginPage.java:27)
+	at PomDemoTests.PomDemoTests.loginVerify(PomDemoTests.java:68)
+	at PomDemoTests.PomDemoTests.verifyFail(PomDemoTests.java:78)
+	at PomDemoTests.PomDemoTests.safariVerifyFail(PomDemoTests.java:114)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">PomDemoTests.PomDemoTests#safariVerifyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-rc-1&apos;, revision: &apos;bc5511cbda&apos;
+System info: host: &apos;MBP-23.local&apos;, ip: &apos;2601:1c2:1a00:b50:1d4d:38:d723:6a44%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [DD43244E-020E-4BE3-A214-3B8C58EF489C, findElement {using=name, value=wpPassword}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.0, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 20G165, safari:platformVersion: 11.6, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: DD43244E-020E-4BE3-A214-3B8C58EF489C
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:381)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at PomDemo.LoginPage.logInFromSplash(LoginPage.java:28)
+	at PomDemoTests.PomDemoTests.loginVerify(PomDemoTests.java:68)
+	at PomDemoTests.PomDemoTests.verifyFdaggett(PomDemoTests.java:74)
+	at PomDemoTests.PomDemoTests.safariVerifyLogin(PomDemoTests.java:96)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
